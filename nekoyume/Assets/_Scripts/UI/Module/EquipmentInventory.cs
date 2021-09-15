@@ -211,5 +211,11 @@ namespace Nekoyume.UI.Module
             item.EffectEnabled.SetValueAndForceNotify(false);
             item.Dimmed.SetValueAndForceNotify(false);
         }
+
+        public void ClearFilter()
+        {
+            gradeFilter.SetValueWithoutNotify(0);
+            elementalFilter.SetValueWithoutNotify(0);
+        }
     }
 }

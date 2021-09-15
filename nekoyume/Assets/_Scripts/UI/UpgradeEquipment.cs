@@ -150,6 +150,7 @@ namespace Nekoyume.UI
             {
                 case State.Show:
                 case State.Empty:
+                    inventory.ClearFilter();
                     inventory.ClearItemState(_baseItem);
                     baseSlot.RemoveMaterial();
                     _baseItem = null;
